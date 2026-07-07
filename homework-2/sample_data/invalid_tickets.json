@@ -1,0 +1,9 @@
+[
+  {
+    "customer_id": "cust-bad-json",
+    "customer_email": "bad-json@example.com",
+    "customer_name": "Bad Json",
+    "subject": "",
+    "description": "This row should fail because the subject is empty."
+  }
+]
