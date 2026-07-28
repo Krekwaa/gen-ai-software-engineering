@@ -63,16 +63,16 @@ pipeline screenshot.
 
 ### Complete pipeline run
 
-![Complete pipeline](docs/screenshots/01-pipeline-run.png)
+![Complete pipeline](https://raw.githubusercontent.com/Krekwaa/gen-ai-software-engineering/homework-4-submission/homework-4/docs/screenshots/01-pipeline-run.png)
 
 ### Fixes and tests after each change
 
-![Fix stage](docs/screenshots/02-fixes-applied.png)
+![Fix stage](https://raw.githubusercontent.com/Krekwaa/gen-ai-software-engineering/homework-4-submission/homework-4/docs/screenshots/02-fixes-applied.png)
 
 ### Read-only security verification
 
-![Security report](docs/screenshots/03-security-scan.png)
+![Security report](https://raw.githubusercontent.com/Krekwaa/gen-ai-software-engineering/homework-4-submission/homework-4/docs/screenshots/03-security-scan.png)
 
 ### Generated tests and FIRST assessment
 
-![Unit tests](docs/screenshots/04-unit-tests.png)
+![Unit tests](https://raw.githubusercontent.com/Krekwaa/gen-ai-software-engineering/homework-4-submission/homework-4/docs/screenshots/04-unit-tests.png)
