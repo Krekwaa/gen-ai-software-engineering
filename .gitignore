@@ -18,6 +18,8 @@ dist/
 # IDE and editor files
 .idea/
 .vscode/
+!homework-5/.vscode/
+!homework-5/.vscode/mcp.json
 *.swp
 *.swo
 *~
