@@ -1,0 +1,1 @@
+{"hooks":{"PreToolUse":[{"matcher":"Bash(git push*)","hooks":[{"type":"command","command":"python homework-6/scripts/check_coverage.py","timeout":120}]}]}}

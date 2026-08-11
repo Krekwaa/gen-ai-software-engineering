@@ -1,0 +1,5 @@
+interface:
+  display_name: "Run Transaction Pipeline"
+  short_description: "Run and summarize the capstone pipeline"
+  default_prompt: "Use $run-pipeline to run Homework 6 and summarize safe results."
+

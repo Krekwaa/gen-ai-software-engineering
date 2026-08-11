@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Transaction Pipeline</title>
+  <style>
+    :root{--ink:#eaf1ff;--muted:#92a4c3;--panel:#111c32;--line:#243759;--cyan:#45d4e8;--green:#39d98a;--amber:#ffbf69;--red:#ff6b7d}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 85% 0,#16365a 0,transparent 35%),#07101f;color:var(--ink);font:15px Inter,Segoe UI,sans-serif}
+    main{max-width:1180px;margin:auto;padding:52px 28px}.eyebrow{color:var(--cyan);letter-spacing:.15em;text-transform:uppercase;font-weight:700}h1{font-size:44px;line-height:1.05;margin:10px 0}.sub{color:var(--muted);max-width:670px;font-size:17px}.top{display:flex;justify-content:space-between;align-items:end;gap:30px}button{border:0;border-radius:10px;background:var(--cyan);color:#05101c;font-weight:800;padding:13px 20px;cursor:pointer}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:34px 0}.card{background:linear-gradient(145deg,#14223c,#0e192c);border:1px solid var(--line);border-radius:14px;padding:20px}.card b{display:block;font-size:30px;margin-top:7px}.card span{color:var(--muted)}table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}th,td{text-align:left;padding:15px;border-bottom:1px solid var(--line)}th{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.08em}.pill{border-radius:99px;padding:5px 9px;font-size:12px;font-weight:700}.settled{background:#12392d;color:var(--green)}.held_for_review{background:#49351b;color:var(--amber)}.rejected{background:#48202b;color:var(--red)}@media(max-width:750px){.top{display:block}.top button{margin-top:18px}.stats{grid-template-columns:1fr 1fr}h1{font-size:34px}}
+  </style>
+</head>
+<body><main>
+  <div class="top"><div><div class="eyebrow">Capstone control room</div><h1>Transaction Pipeline</h1><div class="sub">Validated, risk-scored, and settled with a privacy-safe audit trail.</div></div><button id="run">Run pipeline</button></div>
+  <section class="stats"><div class="card"><span>Processed</span><b id="total">—</b></div><div class="card"><span>Settled</span><b id="settled">—</b></div><div class="card"><span>Held</span><b id="held">—</b></div><div class="card"><span>Rejected</span><b id="rejected">—</b></div></section>
+  <table><thead><tr><th>Transaction</th><th>Amount</th><th>Currency</th><th>Risk</th><th>Status</th><th>Decision</th></tr></thead><tbody id="rows"></tbody></table>
+</main><script>
+const esc=v=>String(v??'—').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+async function load(){const d=await fetch('/api/results').then(r=>r.json()),c=d.status_counts||{};total.textContent=d.total;settled.textContent=c.settled||0;held.textContent=c.held_for_review||0;rejected.textContent=c.rejected||0;rows.innerHTML=d.results.map(x=>`<tr><td><b>${esc(x.transaction_id)}</b></td><td>${esc(x.amount)}</td><td>${esc(x.currency)}</td><td>${esc(x.fraud?.risk_level)}</td><td><span class="pill ${esc(x.status)}">${esc(x.status).replaceAll('_',' ')}</span></td><td>${esc(x.settlement?.reason||x.settlement?.outcome)}</td></tr>`).join('')}
+run.onclick=async()=>{run.disabled=true;run.textContent='Running…';await fetch('/api/run',{method:'POST'});await load();run.disabled=false;run.textContent='Run pipeline'};load();
+</script></body></html>

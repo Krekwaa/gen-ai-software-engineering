@@ -1,0 +1,28 @@
+{
+  "message_id": "e632b7fc-6085-4e27-a700-fb6ba9d7fab2",
+  "timestamp": "2026-08-11T11:04:31.176967Z",
+  "source_stage": "fraud_detector",
+  "target_stage": "settlement",
+  "message_type": "transaction",
+  "data": {
+    "transaction_id": "TXN006",
+    "timestamp": "2026-03-16T10:05:00Z",
+    "source_account": "ACC-1006",
+    "destination_account": "ACC-7700",
+    "amount": "200.00",
+    "currency": "XYZ",
+    "transaction_type": "transfer",
+    "description": "Test payment",
+    "metadata": {
+      "channel": "online",
+      "country": "US"
+    },
+    "status": "rejected",
+    "validation": {
+      "valid": false,
+      "reasons": [
+        "currency must be a supported ISO 4217 code"
+      ]
+    }
+  }
+}
