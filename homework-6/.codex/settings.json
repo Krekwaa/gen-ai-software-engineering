@@ -1,0 +1,5 @@
+{
+  "project": "transaction-processing-capstone",
+  "instructions": "Read agents.md and specification.md before changing the pipeline.",
+  "coverageGate": {"command": "python scripts/check_coverage.py", "minimumPercent": 80, "event": "pre-push"}
+}

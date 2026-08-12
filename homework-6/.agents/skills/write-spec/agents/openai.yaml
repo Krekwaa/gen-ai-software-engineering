@@ -1,0 +1,5 @@
+interface:
+  display_name: "Write Transaction Specification"
+  short_description: "Create the capstone pipeline specification"
+  default_prompt: "Use $write-spec to create the Homework 6 transaction pipeline specification."
+

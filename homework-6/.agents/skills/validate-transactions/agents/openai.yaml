@@ -1,0 +1,5 @@
+interface:
+  display_name: "Validate Transactions"
+  short_description: "Dry-run validation of sample transactions"
+  default_prompt: "Use $validate-transactions to validate all Homework 6 records."
+
