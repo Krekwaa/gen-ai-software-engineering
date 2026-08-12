@@ -1,18 +1,20 @@
-# 🏦 Homework 1: Banking Transactions API
+# Homework 1: Banking Transactions API
 
-> **Student Name**: [Your Name]
-> **Date Submitted**: [Date]
-> **AI Tools Used**: [List tools, e.g., Claude Code, GitHub Copilot]
+**Student:** Vladyslav Shmygelskyy  
+**AI tool:** Codex  
+**Submitted:** August 2026
 
----
+This project implements a small FastAPI banking transaction service backed by in-memory storage. It supports creation, lookup, combined history filters, account balances, and the optional account-summary endpoint.
 
-## 📋 Project Overview
+Validation enforces positive Decimal amounts with at most two fractional digits, `ACC-XXXXX` account identifiers, supported ISO 4217 currencies, and known transaction types. The included pytest program verifies the complete transaction workflow plus negative validation and missing-resource behavior.
 
-[Briefly describe your implementation - what you built and the key features]
+## Endpoints
 
+- `POST /transactions`
+- `GET /transactions`
+- `GET /transactions/{id}`
+- `GET /accounts/{accountId}/balance`
+- `GET /accounts/{accountId}/summary`
 
-<div align="center">
+See [HOWTORUN.md](HOWTORUN.md) and `demo/sample-requests.http`.
 
-*This project was completed as part of the AI-Assisted Development course.*
-
-</div>
