@@ -1,0 +1,402 @@
+[
+  {
+    "customer_id": "cust-001",
+    "customer_email": "customer001@example.com",
+    "customer_name": "Customer 001",
+    "subject": "Cannot access account",
+    "description": "I cannot access my account after resetting my password and need help today.",
+    "category": "account_access",
+    "priority": "urgent",
+    "status": "new",
+    "tags": [
+      "account-access",
+      "batch-1"
+    ],
+    "metadata": {
+      "source": "web_form",
+      "browser": "Chrome",
+      "device_type": "desktop"
+    },
+    "auto_classify": true
+  },
+  {
+    "customer_id": "cust-002",
+    "customer_email": "customer002@example.com",
+    "customer_name": "Customer 002",
+    "subject": "Application error on dashboard",
+    "description": "The dashboard shows an error when I open analytics from the desktop browser.",
+    "category": "technical_issue",
+    "priority": "high",
+    "status": "in_progress",
+    "tags": [
+      "technical-issue",
+      "batch-2"
+    ],
+    "metadata": {
+      "source": "email",
+      "browser": "Firefox",
+      "device_type": "mobile"
+    },
+    "auto_classify": false
+  },
+  {
+    "customer_id": "cust-003",
+    "customer_email": "customer003@example.com",
+    "customer_name": "Customer 003",
+    "subject": "Invoice copy needed",
+    "description": "Please send me a copy of my latest invoice for billing reconciliation.",
+    "category": "billing_question",
+    "priority": "medium",
+    "status": "waiting_customer",
+    "tags": [
+      "billing-question",
+      "batch-3"
+    ],
+    "metadata": {
+      "source": "api",
+      "browser": "Safari",
+      "device_type": "tablet"
+    },
+    "auto_classify": false
+  },
+  {
+    "customer_id": "cust-004",
+    "customer_email": "customer004@example.com",
+    "customer_name": "Customer 004",
+    "subject": "Feature request for reports",
+    "description": "I would like a reporting feature that summarizes monthly support trends.",
+    "category": "feature_request",
+    "priority": "low",
+    "status": "resolved",
+    "tags": [
+      "feature-request",
+      "batch-4"
+    ],
+    "metadata": {
+      "source": "chat",
+      "browser": "Edge",
+      "device_type": "desktop"
+    },
+    "auto_classify": true
+  },
+  {
+    "customer_id": "cust-005",
+    "customer_email": "customer005@example.com",
+    "customer_name": "Customer 005",
+    "subject": "Bug with export workflow",
+    "description": "Steps to reproduce: open export, select CSV, then the page crashes with a defect.",
+    "category": "bug_report",
+    "priority": "urgent",
+    "status": "closed",
+    "tags": [
+      "bug-report",
+      "batch-5"
+    ],
+    "metadata": {
+      "source": "phone",
+      "browser": "Chrome",
+      "device_type": "mobile"
+    },
+    "auto_classify": false
+  },
+  {
+    "customer_id": "cust-006",
+    "customer_email": "customer006@example.com",
+    "customer_name": "Customer 006",
+    "subject": "General support question",
+    "description": "I have a general question about how to use the support portal settings.",
+    "category": "other",
+    "priority": "high",
+    "status": "new",
+    "tags": [
+      "other",
+      "batch-1"
+    ],
+    "metadata": {
+      "source": "web_form",
+      "browser": "Firefox",
+      "device_type": "tablet"
+    },
+    "auto_classify": false
+  },
+  {
+    "customer_id": "cust-007",
+    "customer_email": "customer007@example.com",
+    "customer_name": "Customer 007",
+    "subject": "Cannot access account",
+    "description": "I cannot access my account after resetting my password and need help today.",
+    "category": "account_access",
+    "priority": "medium",
+    "status": "in_progress",
+    "tags": [
+      "account-access",
+      "batch-2"
+    ],
+    "metadata": {
+      "source": "email",
+      "browser": "Safari",
+      "device_type": "desktop"
+    },
+    "auto_classify": true
+  },
+  {
+    "customer_id": "cust-008",
+    "customer_email": "customer008@example.com",
+    "customer_name": "Customer 008",
+    "subject": "Application error on dashboard",
+    "description": "The dashboard shows an error when I open analytics from the desktop browser.",
+    "category": "technical_issue",
+    "priority": "low",
+    "status": "waiting_customer",
+    "tags": [
+      "technical-issue",
+      "batch-3"
+    ],
+    "metadata": {
+      "source": "api",
+      "browser": "Edge",
+      "device_type": "mobile"
+    },
+    "auto_classify": false
+  },
+  {
+    "customer_id": "cust-009",
+    "customer_email": "customer009@example.com",
+    "customer_name": "Customer 009",
+    "subject": "Invoice copy needed",
+    "description": "Please send me a copy of my latest invoice for billing reconciliation.",
+    "category": "billing_question",
+    "priority": "urgent",
+    "status": "resolved",
+    "tags": [
+      "billing-question",
+      "batch-4"
+    ],
+    "metadata": {
+      "source": "chat",
+      "browser": "Chrome",
+      "device_type": "tablet"
+    },
+    "auto_classify": false
+  },
+  {
+    "customer_id": "cust-010",
+    "customer_email": "customer010@example.com",
+    "customer_name": "Customer 010",
+    "subject": "Feature request for reports",
+    "description": "I would like a reporting feature that summarizes monthly support trends.",
+    "category": "feature_request",
+    "priority": "high",
+    "status": "closed",
+    "tags": [
+      "feature-request",
+      "batch-5"
+    ],
+    "metadata": {
+      "source": "phone",
+      "browser": "Firefox",
+      "device_type": "desktop"
+    },
+    "auto_classify": true
+  },
+  {
+    "customer_id": "cust-011",
+    "customer_email": "customer011@example.com",
+    "customer_name": "Customer 011",
+    "subject": "Bug with export workflow",
+    "description": "Steps to reproduce: open export, select CSV, then the page crashes with a defect.",
+    "category": "bug_report",
+    "priority": "medium",
+    "status": "new",
+    "tags": [
+      "bug-report",
+      "batch-1"
+    ],
+    "metadata": {
+      "source": "web_form",
+      "browser": "Safari",
+      "device_type": "mobile"
+    },
+    "auto_classify": false
+  },
+  {
+    "customer_id": "cust-012",
+    "customer_email": "customer012@example.com",
+    "customer_name": "Customer 012",
+    "subject": "General support question",
+    "description": "I have a general question about how to use the support portal settings.",
+    "category": "other",
+    "priority": "low",
+    "status": "in_progress",
+    "tags": [
+      "other",
+      "batch-2"
+    ],
+    "metadata": {
+      "source": "email",
+      "browser": "Edge",
+      "device_type": "tablet"
+    },
+    "auto_classify": false
+  },
+  {
+    "customer_id": "cust-013",
+    "customer_email": "customer013@example.com",
+    "customer_name": "Customer 013",
+    "subject": "Cannot access account",
+    "description": "I cannot access my account after resetting my password and need help today.",
+    "category": "account_access",
+    "priority": "urgent",
+    "status": "waiting_customer",
+    "tags": [
+      "account-access",
+      "batch-3"
+    ],
+    "metadata": {
+      "source": "api",
+      "browser": "Chrome",
+      "device_type": "desktop"
+    },
+    "auto_classify": true
+  },
+  {
+    "customer_id": "cust-014",
+    "customer_email": "customer014@example.com",
+    "customer_name": "Customer 014",
+    "subject": "Application error on dashboard",
+    "description": "The dashboard shows an error when I open analytics from the desktop browser.",
+    "category": "technical_issue",
+    "priority": "high",
+    "status": "resolved",
+    "tags": [
+      "technical-issue",
+      "batch-4"
+    ],
+    "metadata": {
+      "source": "chat",
+      "browser": "Firefox",
+      "device_type": "mobile"
+    },
+    "auto_classify": false
+  },
+  {
+    "customer_id": "cust-015",
+    "customer_email": "customer015@example.com",
+    "customer_name": "Customer 015",
+    "subject": "Invoice copy needed",
+    "description": "Please send me a copy of my latest invoice for billing reconciliation.",
+    "category": "billing_question",
+    "priority": "medium",
+    "status": "closed",
+    "tags": [
+      "billing-question",
+      "batch-5"
+    ],
+    "metadata": {
+      "source": "phone",
+      "browser": "Safari",
+      "device_type": "tablet"
+    },
+    "auto_classify": false
+  },
+  {
+    "customer_id": "cust-016",
+    "customer_email": "customer016@example.com",
+    "customer_name": "Customer 016",
+    "subject": "Feature request for reports",
+    "description": "I would like a reporting feature that summarizes monthly support trends.",
+    "category": "feature_request",
+    "priority": "low",
+    "status": "new",
+    "tags": [
+      "feature-request",
+      "batch-1"
+    ],
+    "metadata": {
+      "source": "web_form",
+      "browser": "Edge",
+      "device_type": "desktop"
+    },
+    "auto_classify": true
+  },
+  {
+    "customer_id": "cust-017",
+    "customer_email": "customer017@example.com",
+    "customer_name": "Customer 017",
+    "subject": "Bug with export workflow",
+    "description": "Steps to reproduce: open export, select CSV, then the page crashes with a defect.",
+    "category": "bug_report",
+    "priority": "urgent",
+    "status": "in_progress",
+    "tags": [
+      "bug-report",
+      "batch-2"
+    ],
+    "metadata": {
+      "source": "email",
+      "browser": "Chrome",
+      "device_type": "mobile"
+    },
+    "auto_classify": false
+  },
+  {
+    "customer_id": "cust-018",
+    "customer_email": "customer018@example.com",
+    "customer_name": "Customer 018",
+    "subject": "General support question",
+    "description": "I have a general question about how to use the support portal settings.",
+    "category": "other",
+    "priority": "high",
+    "status": "waiting_customer",
+    "tags": [
+      "other",
+      "batch-3"
+    ],
+    "metadata": {
+      "source": "api",
+      "browser": "Firefox",
+      "device_type": "tablet"
+    },
+    "auto_classify": false
+  },
+  {
+    "customer_id": "cust-019",
+    "customer_email": "customer019@example.com",
+    "customer_name": "Customer 019",
+    "subject": "Cannot access account",
+    "description": "I cannot access my account after resetting my password and need help today.",
+    "category": "account_access",
+    "priority": "medium",
+    "status": "resolved",
+    "tags": [
+      "account-access",
+      "batch-4"
+    ],
+    "metadata": {
+      "source": "chat",
+      "browser": "Safari",
+      "device_type": "desktop"
+    },
+    "auto_classify": true
+  },
+  {
+    "customer_id": "cust-020",
+    "customer_email": "customer020@example.com",
+    "customer_name": "Customer 020",
+    "subject": "Application error on dashboard",
+    "description": "The dashboard shows an error when I open analytics from the desktop browser.",
+    "category": "technical_issue",
+    "priority": "low",
+    "status": "closed",
+    "tags": [
+      "technical-issue",
+      "batch-5"
+    ],
+    "metadata": {
+      "source": "phone",
+      "browser": "Edge",
+      "device_type": "mobile"
+    },
+    "auto_classify": false
+  }
+]
