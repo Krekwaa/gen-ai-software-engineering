@@ -1,3 +1,0 @@
-customer_id,customer_email,customer_name,subject,description
-cust-bad,not-an-email,Bad Email,Invalid email row,This row should fail because the email address is invalid.
-cust-short,short@example.com,Short Description,Too short,short

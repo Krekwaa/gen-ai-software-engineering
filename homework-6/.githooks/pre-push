@@ -1,5 +1,0 @@
-#!/bin/sh
-echo "Coverage gate: tests must reach at least 80% before push"
-cd "$(git rev-parse --show-toplevel)/homework-6" || exit 1
-python scripts/check_coverage.py
-

@@ -3,7 +3,6 @@ node_modules/
 venv/
 .venv/
 __pycache__/
-.pytest_cache/
 *.pyc
 target/
 build/
@@ -18,8 +17,6 @@ dist/
 # IDE and editor files
 .idea/
 .vscode/
-!homework-5/.vscode/
-!homework-5/.vscode/mcp.json
 *.swp
 *.swo
 *~
@@ -51,8 +48,6 @@ tmp/
 temp/
 *.tmp
 *.temp
-.tmp/
-*.inspect.ndjson
 
 # OS generated files
 .DS_Store
