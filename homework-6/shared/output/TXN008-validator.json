@@ -1,0 +1,26 @@
+{
+  "message_id": "2d531b1d-e22c-4988-a7ae-1147573285ca",
+  "timestamp": "2026-08-11T11:04:31.199692Z",
+  "source_stage": "validator",
+  "target_stage": "fraud_detector",
+  "message_type": "transaction",
+  "data": {
+    "transaction_id": "TXN008",
+    "timestamp": "2026-03-16T10:15:00Z",
+    "source_account": "ACC-1008",
+    "destination_account": "ACC-9900",
+    "amount": "3200.00",
+    "currency": "USD",
+    "transaction_type": "transfer",
+    "description": "Salary advance",
+    "metadata": {
+      "channel": "mobile",
+      "country": "US"
+    },
+    "status": "validated",
+    "validation": {
+      "valid": true,
+      "reasons": []
+    }
+  }
+}
